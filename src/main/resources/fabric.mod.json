@@ -1,36 +1,12 @@
 {
-  "schemaVersion": 1,
-  "id": "vulkanmod",
+  "id": "optvulk",
+  "name": "OptVulk",
   "version": "${version}",
-
-  "name": "VulkanMod",
-  "description": "Bring Vulkan to Minecraft!",
-  "authors": [
-    "Collateral"
-  ],
-  "contact": {
-    "homepage": "",
-    "sources": "https://github.com/xCollateral/VulkanMod"
-  },
-
-  "icon": "assets/vulkanmod/vlogo.png",
-
-  "environment": "client",
+  "description": "Highly optimized Vulkan renderer for Minecraft 1.20.1–1.21.1",
+  "authors": ["OptVulk"],
+  "license": "LGPL-3.0",
+  "icon": "assets/optvulk/icon.png",
   "entrypoints": {
-    "client": [
-      "net.vulkanmod.Initializer"
-    ]
-  },
-  "mixins": [
-    "vulkanmod.mixins.json"
-  ],
-  "accessWidener" : "vulkanmod.accesswidener",
-
-  "depends": {
-    "fabricloader": ">=0.14.14",
-    "minecraft": "1.21.11"
-  },
-  "custom": {
-    "fabric-renderer-api-v1:contains_renderer": true
+    "client": ["net.optvulk.OptVulk"]
   }
 }
