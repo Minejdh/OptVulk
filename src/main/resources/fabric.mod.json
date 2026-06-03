@@ -1,12 +1,26 @@
 {
+  "schemaVersion": 1,
   "id": "optvulk",
-  "name": "OptVulk",
   "version": "${version}",
-  "description": "Highly optimized Vulkan renderer for Minecraft 1.20.1–1.21.1",
-  "authors": ["OptVulk"],
+  "name": "OptVulk",
+  "description": "Enhanced Vulkan renderer for Minecraft 1.20.1–1.21.1",
+  "authors": ["VGZ_0"],
+  "contact": {
+    "homepage": "https://github.com/YOURNAME/OptVulk",
+    "sources": "https://github.com/YOURNAME/OptVulk"
+  },
   "license": "LGPL-3.0",
-  "icon": "assets/optvulk/icon.png",
+  "environment": "client",
   "entrypoints": {
     "client": ["net.optvulk.OptVulk"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.20.1 <=1.21.1"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": ["library"]
+    }
   }
 }
