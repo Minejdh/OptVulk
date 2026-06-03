@@ -33,7 +33,7 @@ tasks.processResources {
 
 tasks.withType(JavaCompile).configureEach {
     it.options.encoding = "UTF-8"
-    it.options.release = 21   // Java 21 recommended for 1.21+
+    it.options.release = 17   // Java 21 recommended for 1.21+
 }
 
 java {
